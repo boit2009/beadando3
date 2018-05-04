@@ -1,0 +1,547 @@
+# depslib dependency file v1.0
+1519048133 source:c:\boti\c++\prog2\graphicskit\main.cpp
+	"graphics.hpp"
+	<iostream>
+	<ctime>
+
+1488256928 c:\boti\c++\prog2\graphicskit\include\graphics.hpp
+	<string>
+
+1519048140 source:c:\boti\c++\prog2\graphicskit\1.cpp
+	"graphics.hpp"
+	<iostream>
+	<ctime>
+
+1521397520 source:c:\boti\c++\prog2\hazi widget 7. gyakra\examplecheckbox.cpp
+	"examplecheckbox.hpp"
+	"graphics.hpp"
+
+1521397116 c:\boti\c++\prog2\hazi widget 7. gyakra\examplecheckbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1488260528 c:\boti\c++\prog2\hazi widget 7. gyakra\include\graphics.hpp
+	<string>
+
+1523274624 c:\boti\c++\prog2\hazi widget 7. gyakra\widgets.hpp
+	"graphics.hpp"
+
+1523275457 source:c:\boti\c++\prog2\hazi widget 7. gyakra\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"examplecheckbox.hpp"
+	"DinamicText.hpp"
+	"szamlalowidget.hpp"
+	<vector>
+	<fstream>
+
+1523275197 source:c:\boti\c++\prog2\hazi widget 7. gyakra\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1523099089 source:c:\boti\c++\prog2\hazi widget 7. gyakra\dinamictext.cpp
+	"DinamicText.hpp"
+	"graphics.hpp"
+
+1523089918 c:\boti\c++\prog2\hazi widget 7. gyakra\dinamictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523275574 source:c:\boti\c++\prog2\hazi widget 7. gyakra\szamlalowidget.cpp
+	"szamlalowidget.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1523274628 c:\boti\c++\prog2\hazi widget 7. gyakra\szamlalowidget.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523099089 source:c:\boti\c++\prog2\hetedik gyak\dinamictext.cpp
+	"DinamicText.hpp"
+	"graphics.hpp"
+
+1523089918 c:\boti\c++\prog2\hetedik gyak\dinamictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1488260528 c:\boti\c++\prog2\hetedik gyak\include\graphics.hpp
+	<string>
+
+1523281348 c:\boti\c++\prog2\hetedik gyak\widgets.hpp
+	"graphics.hpp"
+
+1521397520 source:c:\boti\c++\prog2\hetedik gyak\examplecheckbox.cpp
+	"examplecheckbox.hpp"
+	"graphics.hpp"
+
+1521397116 c:\boti\c++\prog2\hetedik gyak\examplecheckbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523384492 source:c:\boti\c++\prog2\hetedik gyak\szamlalowidget.cpp
+	"szamlalowidget.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1523274628 c:\boti\c++\prog2\hetedik gyak\szamlalowidget.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523281359 source:c:\boti\c++\prog2\hetedik gyak\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1523384492 source:c:\boti\c++\prog2\hetedik gyak\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"szamlalowidget.hpp"
+	"ChoosingBox.hpp"
+	<vector>
+	<fstream>
+
+1523385635 source:c:\boti\c++\prog2\hetedik gyak\choosingbox.cpp
+	"ChoosingBox.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1523382674 c:\boti\c++\prog2\hetedik gyak\choosingbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<iostream>
+
+1523815349 source:c:\boti\c++\prog2\beadando2\choosingbox.cpp
+	"ChoosingBox.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1523800133 c:\boti\c++\prog2\beadando2\choosingbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<iostream>
+
+1488260528 c:\boti\c++\prog2\beadando2\include\graphics.hpp
+	<string>
+
+1523800138 c:\boti\c++\prog2\beadando2\widgets.hpp
+	"graphics.hpp"
+
+1523880568 source:c:\boti\c++\prog2\beadando2\dinamictext.cpp
+	"DinamicText.hpp"
+	"graphics.hpp"
+	<iostream>
+
+1523878610 c:\boti\c++\prog2\beadando2\dinamictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1521397520 source:c:\boti\c++\prog2\beadando2\examplecheckbox.cpp
+	"examplecheckbox.hpp"
+	"graphics.hpp"
+
+1521397116 c:\boti\c++\prog2\beadando2\examplecheckbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523880605 source:c:\boti\c++\prog2\beadando2\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"szamlalowidget.hpp"
+	"ChoosingBox.hpp"
+	"DinamicText.hpp"
+	<vector>
+	<fstream>
+
+1523800129 c:\boti\c++\prog2\beadando2\szamlalowidget.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523800135 source:c:\boti\c++\prog2\beadando2\szamlalowidget.cpp
+	"szamlalowidget.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1523800137 source:c:\boti\c++\prog2\beadando2\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1523882334 source:c:\boti\c++\prog2\8.gyak\choosingbox.cpp
+	"ChoosingBox.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1523881928 c:\boti\c++\prog2\8.gyak\choosingbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<iostream>
+
+1488260528 c:\boti\c++\prog2\8.gyak\include\graphics.hpp
+	<string>
+
+1523884751 c:\boti\c++\prog2\8.gyak\widgets.hpp
+	"graphics.hpp"
+
+1523882334 source:c:\boti\c++\prog2\8.gyak\dinamictext.cpp
+	"DinamicText.hpp"
+	"graphics.hpp"
+	<iostream>
+
+1523882290 c:\boti\c++\prog2\8.gyak\dinamictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523800135 source:c:\boti\c++\prog2\8.gyak\szamlalowidget.cpp
+	"szamlalowidget.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1523800129 c:\boti\c++\prog2\8.gyak\szamlalowidget.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523884837 source:c:\boti\c++\prog2\8.gyak\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1523890087 source:c:\boti\c++\prog2\8.gyak\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"szamlalowidget.hpp"
+	"ChoosingBox.hpp"
+	"DinamicText.hpp"
+	"PushButton.hpp"
+	<vector>
+	<fstream>
+
+1523890031 c:\boti\c++\prog2\8.gyak\pushbutton.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523890154 source:c:\boti\c++\prog2\8.gyak\pushbutton.cpp
+	"PushButton.hpp"
+	"graphics.hpp"
+	<iostream>
+
+1523882334 source:c:\boti\c++\prog2\9.gyak\choosingbox.cpp
+	"ChoosingBox.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1524489397 c:\boti\c++\prog2\9.gyak\choosingbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<iostream>
+
+1488260528 c:\boti\c++\prog2\9.gyak\include\graphics.hpp
+	<string>
+
+1524489988 c:\boti\c++\prog2\9.gyak\widgets.hpp
+	"graphics.hpp"
+
+1524749222 source:c:\boti\c++\prog2\9.gyak\dinamictext.cpp
+	"DinamicText.hpp"
+	"graphics.hpp"
+	<iostream>
+
+1524489397 c:\boti\c++\prog2\9.gyak\dinamictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1523800135 source:c:\boti\c++\prog2\9.gyak\szamlalowidget.cpp
+	"szamlalowidget.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1524489397 c:\boti\c++\prog2\9.gyak\szamlalowidget.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1524489397 source:c:\boti\c++\prog2\9.gyak\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1524759088 source:c:\boti\c++\prog2\9.gyak\mywindow.cpp
+	"MyWindow.hpp"
+	"graphics.hpp"
+	"szamlalowidget.hpp"
+	"ChoosingBox.hpp"
+	"DinamicText.hpp"
+	"StaticText.hpp"
+	"PushButton.hpp"
+	"ChoosingBox.hpp"
+	"vButton.hpp"
+	<iostream>
+	<vector>
+
+1524496464 source:c:\boti\c++\prog2\9.gyak\pushbutton.cpp
+	"PushButton.hpp"
+	"graphics.hpp"
+	<iostream>
+
+1524734468 c:\boti\c++\prog2\9.gyak\pushbutton.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1524495816 source:c:\boti\c++\prog2\9.gyak\statictext.cpp
+	"StaticText.hpp"
+	"graphics.hpp"
+
+1524495816 c:\boti\c++\prog2\9.gyak\statictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string>
+
+1524494654 source:c:\boti\c++\prog2\9.gyak\vbutton.cpp
+	"vButton.hpp"
+	"graphics.hpp"
+	"Window.hpp"
+	<iostream>
+
+1524492480 source:c:\boti\c++\prog2\9.gyak\window.cpp
+	"Window.hpp"
+
+1524495193 source:c:\boti\c++\prog2\9.gyak\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"szamlalowidget.hpp"
+	"ChoosingBox.hpp"
+	"DinamicText.hpp"
+	"StaticText.hpp"
+	"PushButton.hpp"
+	"vButton.hpp"
+	"MyWindow.hpp"
+	<vector>
+	<fstream>
+
+1524492946 c:\boti\c++\prog2\9.gyak\vbutton.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"PushButton.hpp"
+	"Window.hpp"
+
+1524491541 c:\boti\c++\prog2\9.gyak\window.hpp
+	"graphics.hpp"
+	<string>
+	<vector>
+	"widgets.hpp"
+
+1524734818 c:\boti\c++\prog2\9.gyak\mywindow.hpp
+	"graphics.hpp"
+	"Window.hpp"
+	"PushButton.hpp"
+
+1524770471 source:c:\boti\c++\prog2\beadando 3\dinamictext.cpp
+	"DinamicText.hpp"
+	"graphics.hpp"
+	<iostream>
+
+1524489397 c:\boti\c++\prog2\beadando 3\dinamictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1488260528 c:\boti\c++\prog2\beadando 3\include\graphics.hpp
+	<string>
+
+1525284888 c:\boti\c++\prog2\beadando 3\widgets.hpp
+	"graphics.hpp"
+	<string>
+
+1524749027 source:c:\boti\c++\prog2\beadando 3\mywindow.cpp
+	"MyWindow.hpp"
+	"graphics.hpp"
+	"szamlalowidget.hpp"
+	"ChoosingBox.hpp"
+	"DinamicText.hpp"
+	"StaticText.hpp"
+	"PushButton.hpp"
+	"ChoosingBox.hpp"
+	"vButton.hpp"
+	<iostream>
+	<vector>
+
+1524734818 c:\boti\c++\prog2\beadando 3\mywindow.hpp
+	"graphics.hpp"
+	"Window.hpp"
+	"PushButton.hpp"
+
+1524752970 c:\boti\c++\prog2\beadando 3\window.hpp
+	"graphics.hpp"
+	<string>
+	<vector>
+	"widgets.hpp"
+
+1524750593 c:\boti\c++\prog2\beadando 3\pushbutton.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1524489397 c:\boti\c++\prog2\beadando 3\szamlalowidget.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1524751957 c:\boti\c++\prog2\beadando 3\choosingbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<iostream>
+
+1524495816 c:\boti\c++\prog2\beadando 3\statictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string>
+
+1525286448 c:\boti\c++\prog2\beadando 3\vbutton.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"PushButton.hpp"
+	"Window.hpp"
+
+1523800135 source:c:\boti\c++\prog2\beadando 3\szamlalowidget.cpp
+	"szamlalowidget.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1524494654 source:c:\boti\c++\prog2\beadando 3\vbutton.cpp
+	"vButton.hpp"
+	"graphics.hpp"
+	"Window.hpp"
+	<iostream>
+
+1524766357 source:c:\boti\c++\prog2\beadando 3\choosingbox.cpp
+	"ChoosingBox.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1524750593 source:c:\boti\c++\prog2\beadando 3\pushbutton.cpp
+	"PushButton.hpp"
+	"graphics.hpp"
+	<iostream>
+
+1525286801 source:c:\boti\c++\prog2\beadando 3\statictext.cpp
+	"StaticText.hpp"
+	"graphics.hpp"
+
+1525284888 source:c:\boti\c++\prog2\beadando 3\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1525286131 source:c:\boti\c++\prog2\beadando 3\main.cpp
+	"AmobaJatekMester.hpp"
+
+1525286078 c:\boti\c++\prog2\beadando 3\amobajatekmester.hpp
+	"graphics.hpp"
+	<string>
+	<vector>
+	"widgets.hpp"
+
+1525284888 source:c:\boti\c++\prog2\beadando 3\kocka.cpp
+	"kocka.h"
+	"AmobaJatekMester.hpp"
+	"graphics.hpp"
+
+1525284888 c:\boti\c++\prog2\beadando 3\kocka.h
+	"graphics.hpp"
+	"widgets.hpp"
+	"AmobaJatekMester.hpp"
+
+1525286448 source:c:\boti\c++\prog2\beadando 3\amobajatekmester.cpp
+	"AmobaJatekMester.hpp"
+	<iostream>
+	"graphics.hpp"
+	"StaticText.hpp"
+	"kocka.h"
+
+1525286448 source:c:\boti\c++\prog2\beadando\amobajatekmester.cpp
+	"AmobaJatekMester.hpp"
+	<iostream>
+	"graphics.hpp"
+	"StaticText.hpp"
+	"kocka.h"
+
+1525286078 c:\boti\c++\prog2\beadando\amobajatekmester.hpp
+	"graphics.hpp"
+	<string>
+	<vector>
+	"widgets.hpp"
+
+1488260528 c:\boti\c++\prog2\beadando\include\graphics.hpp
+	<string>
+
+1525284888 c:\boti\c++\prog2\beadando\widgets.hpp
+	"graphics.hpp"
+	<string>
+
+1524495816 c:\boti\c++\prog2\beadando\statictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string>
+
+1525284888 c:\boti\c++\prog2\beadando\kocka.h
+	"graphics.hpp"
+	"widgets.hpp"
+	"AmobaJatekMester.hpp"
+
+1525284888 source:c:\boti\c++\prog2\beadando\kocka.cpp
+	"kocka.h"
+	"AmobaJatekMester.hpp"
+	"graphics.hpp"
+
+1525286131 source:c:\boti\c++\prog2\beadando\main.cpp
+	"AmobaJatekMester.hpp"
+
+1525286801 source:c:\boti\c++\prog2\beadando\statictext.cpp
+	"StaticText.hpp"
+	"graphics.hpp"
+
+1525284888 source:c:\boti\c++\prog2\beadando\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1525439515 source:c:\boti\beadando\amobajatekmester.cpp
+	"AmobaJatekMester.hpp"
+	<iostream>
+	"graphics.hpp"
+	"StaticText.hpp"
+	"kocka.h"
+
+1525286078 c:\boti\beadando\amobajatekmester.hpp
+	"graphics.hpp"
+	<string>
+	<vector>
+	"widgets.hpp"
+
+1488260528 c:\boti\beadando\include\graphics.hpp
+	<string>
+
+1525284888 c:\boti\beadando\widgets.hpp
+	"graphics.hpp"
+	<string>
+
+1524495816 c:\boti\beadando\statictext.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string>
+
+1525284888 c:\boti\beadando\kocka.h
+	"graphics.hpp"
+	"widgets.hpp"
+	"AmobaJatekMester.hpp"
+
+1525284888 source:c:\boti\beadando\kocka.cpp
+	"kocka.h"
+	"AmobaJatekMester.hpp"
+	"graphics.hpp"
+
+1525286131 source:c:\boti\beadando\main.cpp
+	"AmobaJatekMester.hpp"
+
+1525286801 source:c:\boti\beadando\statictext.cpp
+	"StaticText.hpp"
+	"graphics.hpp"
+
+1525284888 source:c:\boti\beadando\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
