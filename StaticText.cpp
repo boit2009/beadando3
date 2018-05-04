@@ -30,7 +30,7 @@ void StaticText::draw()
                 ideiglenes+=_szoveg[i];
           }
         }
-    gout << move_to(_x, _y) << color(255,135,255) << box(_size_x, _size_y);
+    gout << move_to(_x, _y) << color(32,55,122) << box(_size_x, _size_y);
     gout << move_to(_x+2, _y+2) << color(0,0,0) << box(_size_x-4, _size_y-4);
     gout<<move_to(_x+_size_x/2-gout.twidth(ideiglenes)/2,_y+_size_y/2+(gout.cascent()+gout.cdescent())/2)<<color(21,243,255)<<text(ideiglenes);
 
