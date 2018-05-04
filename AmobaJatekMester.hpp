@@ -4,6 +4,7 @@
 #include<string>
 #include <vector>
 #include "widgets.hpp"
+#include "StaticText.hpp"
 using namespace std;
 
 
@@ -16,6 +17,9 @@ protected:
 	int _mennyi_lepes_tortent;
     bool _van_e_nyertes;
     bool start;
+    StaticText *w;
+    StaticText *p1;
+    StaticText *p2;
 
 public:
     AmobaJatekMester();

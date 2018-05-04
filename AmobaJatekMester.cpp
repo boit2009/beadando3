@@ -1,7 +1,7 @@
 #include "AmobaJatekMester.hpp"
 #include <iostream>
 #include "graphics.hpp"
-#include "StaticText.hpp"
+
 #include "kocka.h"
 using namespace genv;
 void nyeresvizsgalat(int szamlalo, string& idg, string& kijon, bool& vanenyertes,bool& startos)
@@ -15,13 +15,15 @@ void nyeresvizsgalat(int szamlalo, string& idg, string& kijon, bool& vanenyertes
 }
 
 
-StaticText *w= new StaticText(200,60,300,50,"Player 1 következik");
-StaticText *p1= new StaticText(30,60,100,50,"P1: piros");
-StaticText *p2= new StaticText(570,60,100,50,"P2: kék");
+
 
 
 AmobaJatekMester::AmobaJatekMester()
 {
+    gout.open(700,700);
+    w= new StaticText(200,60,300,50,"Player 1 következik");
+    p1= new StaticText(30,60,100,50,"P1: piros");
+    p2= new StaticText(570,60,100,50,"P2: kék");
 	widgets.push_back(w);
 	widgets.push_back(p1);
 	widgets.push_back(p2);
@@ -42,7 +44,7 @@ void AmobaJatekMester::lepes_tortent()
 {
 	_mennyi_lepes_tortent++;
 	string ideiglenes="";
-
+   // w->gett
 	int sorbaszamolo=0;
 	for (unsigned int i=3; i<widgets.size(); i++) {
 
@@ -56,13 +58,6 @@ void AmobaJatekMester::lepes_tortent()
 				}
 			}
 			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,start);
-
-//                if (sorbaszamolo==4)
-//                {
-//                    ideiglenes=_ki_jon;
-//                    ideiglenes+=" NYERT!";
-//                    _van_e_nyertes=true;
-//                }
 			sorbaszamolo=0;
 
 			if(i-3+80<400) {
@@ -127,6 +122,7 @@ void AmobaJatekMester::lepes_tortent()
 
 void AmobaJatekMester::event_loop()
 {
+
 	event ev;
 	int focus = -1;
 	while(gin >> ev ) {
@@ -141,7 +137,7 @@ void AmobaJatekMester::event_loop()
 			widgets.resize(3);
 			_ki_jon="Player 1";
 			_van_e_nyertes=false;
-            w->settext("Player 1 következik");
+			w->settext("Player 1 következik");
 			_mennyi_lepes_tortent=0;
 			for (int i=0; i<20; i++) {
 				for(int j=0; j<20; j++) {
@@ -160,11 +156,9 @@ void AmobaJatekMester::event_loop()
 						if(focus!=-1) {
 							if(!widgets[focus]->is_focused())
 								focus = i;
-						}
-						else {
+						} else {
 							focus = i;
 						}
-
 					}
 				}
 
@@ -189,8 +183,8 @@ void AmobaJatekMester::event_loop()
 
 		}
 	}
-    for (unsigned int i=0; i<widgets.size(); i++)
-        delete widgets[i];
+	for (unsigned int i=0; i<widgets.size(); i++)
+		delete widgets[i];
 }
 string AmobaJatekMester::getkijon()
 {
