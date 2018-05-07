@@ -4,7 +4,7 @@
 using namespace genv;
 
 
-kocka::kocka(int x, int y,int sx, int sy, int sorszam, AmobaJatekMester* parent): Widget(x,y,sx,sy)
+kocka::kocka(int x, int y, int sx, int sy, int sorszam, AmobaJatekMester* parent): Widget(x,y,sx,sy)
 {
 
 	_sorszam=sorszam;

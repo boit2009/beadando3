@@ -44,6 +44,8 @@
 		<Unit filename="AmobaJatekMester.hpp" />
 		<Unit filename="StaticText.cpp" />
 		<Unit filename="StaticText.hpp" />
+		<Unit filename="Window.cpp" />
+		<Unit filename="Window.hpp" />
 		<Unit filename="kocka.cpp" />
 		<Unit filename="kocka.h" />
 		<Unit filename="main.cpp" />

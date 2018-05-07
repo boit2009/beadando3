@@ -5,14 +5,16 @@
 #include <vector>
 #include "widgets.hpp"
 #include "StaticText.hpp"
+#include "kocka.h"
+#include "Window.hpp"
 using namespace std;
+class kocka;
 
-
-class AmobaJatekMester
-{
+class AmobaJatekMester : public Window{
 protected:
+//    kocka k;
 
-	vector<Widget*> widgets;
+	vector<kocka*> kockak;
 	string _ki_jon;
 	int _mennyi_lepes_tortent;
     bool _van_e_nyertes;
@@ -23,9 +25,10 @@ protected:
 
 public:
     AmobaJatekMester();
-	void event_loop();
+
 	void lepes_tortent();
 	string getkijon();
+	void esemeny(genv::event ev);
 
 };
 

@@ -17,13 +17,11 @@ public:
 	virtual void draw() = 0;
 	virtual void handle(genv::event ev) = 0;
 	virtual bool is_focused();
-	virtual bool is_lenyilos_widget();
 	virtual bool _focusable();
 	int getx();
 	int gety();
 	int getsizex();
 	int getsizey();
-	virtual std::string getszoveg();
 
 };
 

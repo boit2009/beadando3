@@ -22,10 +22,6 @@ bool Widget::is_focused()
 	return false;
 }
 
-bool Widget::is_lenyilos_widget()
-{
-	return false;
-}
 int Widget::getx()
 {
 	return _x;
@@ -47,10 +43,7 @@ bool Widget::_focusable()
 {
     return _is_focusable;
 }
-std::string Widget::getszoveg()
-{
-    return "";
-}
+
 
 
 

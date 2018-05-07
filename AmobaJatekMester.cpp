@@ -36,6 +36,7 @@ AmobaJatekMester::AmobaJatekMester()
 		for(int j=0; j<20; j++) {
 			kocka  *uj=new kocka(150+j*20,150+i*20,20,20,i*10+j,this);
 			widgets.push_back(uj);
+			kockak.push_back(uj);
 		}
 	}
 
@@ -44,14 +45,13 @@ void AmobaJatekMester::lepes_tortent()
 {
 	_mennyi_lepes_tortent++;
 	string ideiglenes="";
-   // w->gett
 	int sorbaszamolo=0;
-	for (unsigned int i=3; i<widgets.size(); i++) {
+	for (unsigned int i=0; i<kockak.size(); i++) {
 
-		if(widgets[i]->getszoveg()!="Senki") {
-			if((i-3)%20+4<20 && i<399) {
+		if(kockak[i]->getszoveg()!="Senki") {
+			if((i)%20+4<20 && i<396) {
 				for(unsigned int j=i+1; j<i+5; j++) {
-					if(widgets[i]->getszoveg()==widgets[j]->getszoveg())
+					if(kockak[i]->getszoveg()==kockak[j]->getszoveg())
 						sorbaszamolo++;
 					else
 						break;
@@ -60,10 +60,10 @@ void AmobaJatekMester::lepes_tortent()
 			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,start);
 			sorbaszamolo=0;
 
-			if(i-3+80<400) {
+			if(i+80<400) {
 
 				for(unsigned int j=i+20; j<i+100; j=j+20) {
-					if(widgets[i]->getszoveg()==widgets[j]->getszoveg())
+					if(kockak[i]->getszoveg()==kockak[j]->getszoveg())
 						sorbaszamolo++;
 					else
 						break;
@@ -73,9 +73,9 @@ void AmobaJatekMester::lepes_tortent()
 			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,start);
 			sorbaszamolo=0;
 
-			if(i-3+84<400 && ((i-3)%20+4<20)) {
+			if(i+84<400 && ((i)%20+4<20)) {
 				for(unsigned int j=i+21; j<i+105; j=j+21) {
-					if(widgets[i]->getszoveg()==widgets[j]->getszoveg())
+					if(kockak[i]->getszoveg()==kockak[j]->getszoveg())
 						sorbaszamolo++;
 					else
 						break;
@@ -85,9 +85,9 @@ void AmobaJatekMester::lepes_tortent()
 			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,start);
 			sorbaszamolo=0;
 
-			if(i-3+76<400 && ((i-3)%20>3)) {
+			if(i+76<400 && ((i)%20>3)) {
 				for(unsigned int j=i+19; j<i+95; j=j+19) {
-					if(widgets[i]->getszoveg()==widgets[j]->getszoveg())
+					if(kockak[i]->getszoveg()==kockak[j]->getszoveg())
 						sorbaszamolo++;
 					else
 						break;
@@ -118,20 +118,12 @@ void AmobaJatekMester::lepes_tortent()
 }
 
 
-
-
-void AmobaJatekMester::event_loop()
+void AmobaJatekMester::esemeny(genv::event ev)
 {
-
-	event ev;
-	int focus = -1;
-	while(gin >> ev ) {
-		if (ev.type==ev_key && ev.keycode==key_escape)
-			break;
-		if(ev.keycode==115) {
-			focus=-1;
+    if(ev.keycode==115) {
+			//focus=-1;
 			start=true;
-			for (unsigned int i=3; i<widgets.size(); i++) {
+			for (unsigned int i=0; i<widgets.size(); i++) {
 				delete widgets[i];
 			}
 			widgets.resize(3);
@@ -142,50 +134,32 @@ void AmobaJatekMester::event_loop()
 			for (int i=0; i<20; i++) {
 				for(int j=0; j<20; j++) {
 					kocka  *uj=new kocka(150+j*20,150+i*20,20,20,i*10+j,this);
-					widgets.push_back(uj);
+					kockak.push_back(uj);
 				}
 			}
 		}
-		if (start) {
-			if (ev.type == ev_mouse && ev.button==btn_left) {
-				for (unsigned int i=3; i<widgets.size(); i++) {
-					if (widgets[i]->is_selected(ev.pos_x, ev.pos_y)|| widgets[i]->is_focused()) {
-						if (focus!=-1) {
-							widgets[focus]->handle(ev);
-						}
-						if(focus!=-1) {
-							if(!widgets[focus]->is_focused())
-								focus = i;
-						} else {
-							focus = i;
-						}
-					}
-				}
-
-			}
-			if (focus!=-1) {
-				widgets[focus]->handle(ev);
-				widgets[focus]->draw();
-
-			}
-			bool osszes_nem_focused=true;
-			for (unsigned int i=3; i<widgets.size(); i++) {
-				if(widgets[i]->is_focused()) {
-					osszes_nem_focused=false;
-				}
-			}
-			if(osszes_nem_focused)
-				for (Widget * w : widgets) {
-					w->draw();
-				}
-
-			gout << refresh;
-
-		}
-	}
-	for (unsigned int i=0; i<widgets.size(); i++)
-		delete widgets[i];
 }
+
+/*void AmobaJatekMester::event_loop()
+{if(ev.keycode==115) {
+			focus=-1;
+			start=true;
+			for (unsigned int i=0; i<widgets.size(); i++) {
+				delete widgets[i];
+			}
+			widgets.resize(3);
+			_ki_jon="Player 1";
+			_van_e_nyertes=false;
+			w->settext("Player 1 következik");
+			_mennyi_lepes_tortent=0;
+			for (int i=0; i<20; i++) {
+				for(int j=0; j<20; j++) {
+					kocka  *uj=new kocka(150+j*20,150+i*20,20,20,i*10+j,this);
+					kockak.push_back(uj);
+				}
+			}
+		};
+}*/
 string AmobaJatekMester::getkijon()
 {
 	return _ki_jon;

@@ -5,7 +5,7 @@
 #include "AmobaJatekMester.hpp"
 
 
-
+class AmobaJatekMester;
 class kocka : public Widget
 {
 protected:
