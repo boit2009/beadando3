@@ -10,6 +10,7 @@ protected:
 	int _x, _y, _size_x, _size_y;
 	bool _focused;
 	bool _is_focusable;
+
 public:
 	Widget(int x, int y, int sx, int sy);
 
@@ -22,6 +23,7 @@ public:
 	int gety();
 	int getsizex();
 	int getsizey();
+
 
 };
 

@@ -14,7 +14,7 @@ protected:
 	vector<Widget*> widgets;
 
 public:
-    virtual void esemeny(genv::event ev)=0;
+    virtual bool start(genv::event ev, int &focus)=0;
 	void event_loop();
 };
 

@@ -13,10 +13,10 @@ void Window::event_loop()
 	while(gin >> ev ) {
 		if (ev.type==ev_key && ev.keycode==key_escape)
 			break;
-        this->esemeny(ev);
-		//if (start) {
+
+		if (this->start(ev, focus)) {
 			if (ev.type == ev_mouse && ev.button==btn_left) {
-				for (unsigned int i=3; i<widgets.size(); i++) {
+				for (unsigned int i=0; i<widgets.size(); i++) {
 					if (widgets[i]->is_selected(ev.pos_x, ev.pos_y)|| widgets[i]->is_focused()) {
 						if (focus!=-1) {
 							widgets[focus]->handle(ev);
@@ -37,7 +37,7 @@ void Window::event_loop()
 
 			}
 			bool osszes_nem_focused=true;
-			for (unsigned int i=3; i<widgets.size(); i++) {
+			for (unsigned int i=0; i<widgets.size(); i++) {
 				if(widgets[i]->is_focused()) {
 					osszes_nem_focused=false;
 				}
@@ -49,7 +49,7 @@ void Window::event_loop()
 
 			gout << refresh;
 
-	//	}
+		}
 	}
 	for (unsigned int i=0; i<widgets.size(); i++)
 		delete widgets[i];

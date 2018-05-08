@@ -18,17 +18,16 @@ protected:
 	string _ki_jon;
 	int _mennyi_lepes_tortent;
     bool _van_e_nyertes;
-    bool start;
+    bool _start;
     StaticText *w;
     StaticText *p1;
     StaticText *p2;
 
 public:
     AmobaJatekMester();
-
 	void lepes_tortent();
 	string getkijon();
-	void esemeny(genv::event ev);
+    bool start(genv::event ev, int &focus);
 
 };
 

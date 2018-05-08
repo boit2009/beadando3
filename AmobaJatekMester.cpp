@@ -29,7 +29,7 @@ AmobaJatekMester::AmobaJatekMester()
 	widgets.push_back(p2);
 	_ki_jon="Player 1";
 	_van_e_nyertes=false;
-	start=true;
+	_start=true;
 
 	_mennyi_lepes_tortent=0;
 	for (int i=0; i<20; i++) {
@@ -57,7 +57,7 @@ void AmobaJatekMester::lepes_tortent()
 						break;
 				}
 			}
-			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,start);
+			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,_start);
 			sorbaszamolo=0;
 
 			if(i+80<400) {
@@ -70,7 +70,7 @@ void AmobaJatekMester::lepes_tortent()
 
 				}
 			}
-			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,start);
+			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,_start);
 			sorbaszamolo=0;
 
 			if(i+84<400 && ((i)%20+4<20)) {
@@ -82,7 +82,7 @@ void AmobaJatekMester::lepes_tortent()
 
 				}
 			}
-			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,start);
+			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,_start);
 			sorbaszamolo=0;
 
 			if(i+76<400 && ((i)%20>3)) {
@@ -94,7 +94,7 @@ void AmobaJatekMester::lepes_tortent()
 
 				}
 			}
-			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,start);
+			nyeresvizsgalat(sorbaszamolo,ideiglenes,_ki_jon,_van_e_nyertes,_start);
 			sorbaszamolo=0;
 
 		}
@@ -118,15 +118,16 @@ void AmobaJatekMester::lepes_tortent()
 }
 
 
-void AmobaJatekMester::esemeny(genv::event ev)
+bool AmobaJatekMester::start(genv::event ev, int &focus)
 {
     if(ev.keycode==115) {
-			//focus=-1;
-			start=true;
-			for (unsigned int i=0; i<widgets.size(); i++) {
+			focus=-1;
+			_start=true;
+			for (unsigned int i=3; i<widgets.size(); i++) {
 				delete widgets[i];
 			}
 			widgets.resize(3);
+			kockak.resize(0);
 			_ki_jon="Player 1";
 			_van_e_nyertes=false;
 			w->settext("Player 1 következik");
@@ -135,31 +136,17 @@ void AmobaJatekMester::esemeny(genv::event ev)
 				for(int j=0; j<20; j++) {
 					kocka  *uj=new kocka(150+j*20,150+i*20,20,20,i*10+j,this);
 					kockak.push_back(uj);
+					widgets.push_back(uj);
 				}
 			}
+			return true;
 		}
+		if (_start)
+            return true;
+        else
+		return false;
 }
 
-/*void AmobaJatekMester::event_loop()
-{if(ev.keycode==115) {
-			focus=-1;
-			start=true;
-			for (unsigned int i=0; i<widgets.size(); i++) {
-				delete widgets[i];
-			}
-			widgets.resize(3);
-			_ki_jon="Player 1";
-			_van_e_nyertes=false;
-			w->settext("Player 1 következik");
-			_mennyi_lepes_tortent=0;
-			for (int i=0; i<20; i++) {
-				for(int j=0; j<20; j++) {
-					kocka  *uj=new kocka(150+j*20,150+i*20,20,20,i*10+j,this);
-					kockak.push_back(uj);
-				}
-			}
-		};
-}*/
 string AmobaJatekMester::getkijon()
 {
 	return _ki_jon;
