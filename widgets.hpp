@@ -19,10 +19,7 @@ public:
 	virtual void handle(genv::event ev) = 0;
 	virtual bool is_focused();
 	virtual bool _focusable();
-	int getx();
-	int gety();
-	int getsizex();
-	int getsizey();
+
 
 
 };

@@ -20,10 +20,10 @@ void nyeresvizsgalat(int szamlalo, string& idg, string& kijon, bool& vanenyertes
 
 AmobaJatekMester::AmobaJatekMester()
 {
-    gout.open(700,700);
-    w= new StaticText(200,60,300,50,"Player 1 következik");
-    p1= new StaticText(30,60,100,50,"P1: piros");
-    p2= new StaticText(570,60,100,50,"P2: kék");
+	gout.open(700,700);
+	w= new StaticText(200,60,300,50,"Player 1 következik");
+	p1= new StaticText(30,60,100,50,"P1: piros");
+	p2= new StaticText(570,60,100,50,"P2: kék");
 	widgets.push_back(w);
 	widgets.push_back(p1);
 	widgets.push_back(p2);
@@ -34,7 +34,7 @@ AmobaJatekMester::AmobaJatekMester()
 	_mennyi_lepes_tortent=0;
 	for (int i=0; i<20; i++) {
 		for(int j=0; j<20; j++) {
-			kocka  *uj=new kocka(150+j*20,150+i*20,20,20,i*10+j,this);
+			kocka  *uj=new kocka(150+j*20,150+i*20,20,20,this);
 			widgets.push_back(uj);
 			kockak.push_back(uj);
 		}
@@ -120,30 +120,30 @@ void AmobaJatekMester::lepes_tortent()
 
 bool AmobaJatekMester::start(genv::event ev, int &focus)
 {
-    if(ev.keycode==115) {
-			focus=-1;
-			_start=true;
-			for (unsigned int i=3; i<widgets.size(); i++) {
-				delete widgets[i];
-			}
-			widgets.resize(3);
-			kockak.resize(0);
-			_ki_jon="Player 1";
-			_van_e_nyertes=false;
-			w->settext("Player 1 következik");
-			_mennyi_lepes_tortent=0;
-			for (int i=0; i<20; i++) {
-				for(int j=0; j<20; j++) {
-					kocka  *uj=new kocka(150+j*20,150+i*20,20,20,i*10+j,this);
-					kockak.push_back(uj);
-					widgets.push_back(uj);
-				}
-			}
-			return true;
+	if(ev.keycode==115) {
+		focus=-1;
+		_start=true;
+		for (unsigned int i=3; i<widgets.size(); i++) {
+			delete widgets[i];
 		}
-		if (_start)
-            return true;
-        else
+		widgets.resize(3);
+		kockak.resize(0);
+		_ki_jon="Player 1";
+		_van_e_nyertes=false;
+		w->settext("Player 1 következik");
+		_mennyi_lepes_tortent=0;
+		for (int i=0; i<20; i++) {
+			for(int j=0; j<20; j++) {
+				kocka  *uj=new kocka(150+j*20,150+i*20,20,20,this);
+				kockak.push_back(uj);
+				widgets.push_back(uj);
+			}
+		}
+		return true;
+	}
+	if (_start)
+		return true;
+	else
 		return false;
 }
 

@@ -22,22 +22,6 @@ bool Widget::is_focused()
 	return false;
 }
 
-int Widget::getx()
-{
-	return _x;
-}
-int Widget::getsizex()
-{
-	return _size_x;
-}
-int Widget::gety()
-{
-	return _y;
-}
-int Widget::getsizey()
-{
-	return _size_y;
-}
 
 bool Widget::_focusable()
 {

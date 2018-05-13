@@ -13,12 +13,12 @@ protected:
 	string _kie;
 	bool _lenyomott;
 	AmobaJatekMester* _parent;
-	int _sorszam;
+
 
 
 
 public:
-	kocka(int x, int y, int sx, int sy,int sorszam, AmobaJatekMester* parent);
+	kocka(int x, int y, int sx, int sy, AmobaJatekMester* parent);
 
 	void draw();
 	void handle(genv::event ev);

@@ -545,13 +545,13 @@
 	"widgets.hpp"
 	"graphics.hpp"
 
-1526211571 source:c:\users\zemle\documents\github\beadando3\amobajatekmester.cpp
+1526245640 source:c:\users\zemle\documents\github\beadando3\amobajatekmester.cpp
 	"AmobaJatekMester.hpp"
 	<iostream>
 	"graphics.hpp"
 	"kocka.h"
 
-1525962249 c:\users\zemle\documents\github\beadando3\amobajatekmester.hpp
+1526245640 c:\users\zemle\documents\github\beadando3\amobajatekmester.hpp
 	"graphics.hpp"
 	<string>
 	<vector>
@@ -563,7 +563,7 @@
 1488260528 c:\users\zemle\documents\github\beadando3\include\graphics.hpp
 	<string>
 
-1525779104 c:\users\zemle\documents\github\beadando3\widgets.hpp
+1526245640 c:\users\zemle\documents\github\beadando3\widgets.hpp
 	"graphics.hpp"
 	<string>
 
@@ -572,31 +572,31 @@
 	"widgets.hpp"
 	<string>
 
-1525702892 c:\users\zemle\documents\github\beadando3\kocka.h
+1526245530 c:\users\zemle\documents\github\beadando3\kocka.h
 	"graphics.hpp"
 	"widgets.hpp"
 	"AmobaJatekMester.hpp"
 
-1525704035 source:c:\users\zemle\documents\github\beadando3\kocka.cpp
+1526245515 source:c:\users\zemle\documents\github\beadando3\kocka.cpp
 	"kocka.h"
 	"AmobaJatekMester.hpp"
 	"graphics.hpp"
 
-1525699782 source:c:\users\zemle\documents\github\beadando3\main.cpp
+1526245640 source:c:\users\zemle\documents\github\beadando3\main.cpp
 	"AmobaJatekMester.hpp"
 
-1525700290 source:c:\users\zemle\documents\github\beadando3\widgets.cpp
+1526245640 source:c:\users\zemle\documents\github\beadando3\widgets.cpp
 	"widgets.hpp"
 	"graphics.hpp"
 
-1525446995 source:c:\users\zemle\documents\github\beadando3\statictext.cpp
+1526245640 source:c:\users\zemle\documents\github\beadando3\statictext.cpp
 	"StaticText.hpp"
 	"graphics.hpp"
 
 1526211329 source:c:\users\zemle\documents\github\beadando3\window.cpp
 	"Window.hpp"
 
-1525780194 c:\users\zemle\documents\github\beadando3\window.hpp
+1526245640 c:\users\zemle\documents\github\beadando3\window.hpp
 	"graphics.hpp"
 	<string>
 	<vector>
