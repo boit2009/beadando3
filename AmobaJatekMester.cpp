@@ -102,7 +102,7 @@ void AmobaJatekMester::lepes_tortent()
 
 
 	if(_mennyi_lepes_tortent==400) {
-		ideiglenes="PATT, NINCS TÖBB HELY!";
+		ideiglenes="PATT, NINCS TÖBB HELY! új játék: s";
 	} else {
 		if(_ki_jon=="Player 1") {
 			_ki_jon="Player 2";

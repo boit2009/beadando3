@@ -545,13 +545,13 @@
 	"widgets.hpp"
 	"graphics.hpp"
 
-1525780194 source:c:\users\zemle\documents\github\beadando3\amobajatekmester.cpp
+1526211571 source:c:\users\zemle\documents\github\beadando3\amobajatekmester.cpp
 	"AmobaJatekMester.hpp"
 	<iostream>
 	"graphics.hpp"
 	"kocka.h"
 
-1525780194 c:\users\zemle\documents\github\beadando3\amobajatekmester.hpp
+1525962249 c:\users\zemle\documents\github\beadando3\amobajatekmester.hpp
 	"graphics.hpp"
 	<string>
 	<vector>
@@ -593,7 +593,7 @@
 	"StaticText.hpp"
 	"graphics.hpp"
 
-1525780062 source:c:\users\zemle\documents\github\beadando3\window.cpp
+1526211329 source:c:\users\zemle\documents\github\beadando3\window.cpp
 	"Window.hpp"
 
 1525780194 c:\users\zemle\documents\github\beadando3\window.hpp

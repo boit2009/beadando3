@@ -12,8 +12,6 @@ class kocka;
 
 class AmobaJatekMester : public Window{
 protected:
-//    kocka k;
-
 	vector<kocka*> kockak;
 	string _ki_jon;
 	int _mennyi_lepes_tortent;

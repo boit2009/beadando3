@@ -17,7 +17,7 @@ void Window::event_loop()
 		if (this->start(ev, focus)) {
 			if (ev.type == ev_mouse && ev.button==btn_left) {
 				for (unsigned int i=0; i<widgets.size(); i++) {
-					if (widgets[i]->is_selected(ev.pos_x, ev.pos_y)|| widgets[i]->is_focused()) {
+					if (widgets[i]->is_selected(ev.pos_x, ev.pos_y)|| widgets[i]->is_focused() && widgets[i]->_focusable()) {
 						if (focus!=-1) {
 							widgets[focus]->handle(ev);
 						}
